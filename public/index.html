@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script defer src="/js/dice.js"></script>
+    <script defer src="/js/scoreTable.js"></script>
+
+    <link rel="stylesheet" href="/css/dice.css">
+    <link rel="stylesheet" href="/css/darkTheme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="info-box">
+    </div>
+    <div style="flex:2;display: flex;justify-content: center;align-items: center; height: 100vh;flex-direction: column;">
+        <h1 class="score">2</h1>
+        <dice-holder>
+            <dice></dice>
+            <dice></dice>
+            <dice></dice>
+            <dice></dice>
+            <dice></dice>
+        </dice-holder>
+        <div>
+            <button style="margin-right: 10px" class="roll">Roll</button>
+            <button class="reset">Reset</button>
+        </div>
+    </div>
+    <div style="flex:1;margin-right: 30px;">
+        <table id="score-table">
+        </table>
+    </div>
+</body>
+
+</html>

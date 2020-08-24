@@ -1,0 +1,20 @@
+:root {
+    --one: #7FB069;
+    --two: #6689A1;
+    --three: #E6AA68;
+    --four: #CA3C25;
+    --five: #953781;
+    --six: #006D77;
+
+    --background-color: #333;
+    --background-color-2: #555;
+    --table-border: #333;
+    --table-color: #aaa;
+
+    --color: #eee;
+
+    --button-roll: #7FB069;
+    --button-roll-hover: #94cc7a;
+    --button-reset: #666;
+    --button-reset-hover: #777;
+}

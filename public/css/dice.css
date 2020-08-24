@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alata', sans-serif;
+}
+
+html {
+    overflow: hidden;
+}
+
+.one {
+    background-color: var(--one);
+}
+
+.two {
+    background-color: var(--two);
+}
+
+.three {
+    background-color: var(--three);
+}
+
+.four {
+    background-color: var(--four);
+}
+
+.five {
+    background-color: var(--five);
+}
+
+.six {
+    background-color: var(--six);
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: row;
+}
+
+dice-holder {
+    display: flex;
+    flex-direction: row;
+}
+
+dice-holder dice {
+    margin-right: 20px;
+}
+
+dice-holder *:last-child {
+    margin-right: 0px;
+}
+
+dice {
+    width: 150px;
+    height: 150px;
+    display: block;
+    position: relative;
+    border-radius: 15px;
+    transition: box-shadow .2s;
+    transition: .3s;
+}
+
+dice.stored {
+    box-shadow: inset 0 0 0 6px var(--color);
+}
+
+dot {
+    display: block;
+    position: absolute;
+    background-color: var(--color);;
+    border-radius: 500px;
+    width: 20px;
+    height: 20px;
+}
+
+@keyframes animateUp {
+    0% {
+        top: 0px;
+    }
+
+    40% {
+        top: -40px;
+    }
+
+    80% {
+        top: 10px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        transform: rotate(2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+button {
+    margin-top: 16px;
+    padding: 16px 32px;
+    font-size: 24px;
+    background-color: var(--button-reset);
+    border: solid 0px #0000;
+    color: var(--color);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color .1s;
+}
+
+button:hover {
+    background-color: var(--button-reset-hover);
+}
+
+button.roll {
+    background-color: var(--button-roll);
+}
+
+button.roll:hover {
+    background-color: var(--button-roll-hover);;
+}
+
+.score {
+    color: var(--color);
+    font-size: 64px;
+    margin-bottom:20px;
+}
+
+td {
+    border: 1px solid var(--table-border);
+    font-size: 12px;
+    padding: 5px;
+}
+
+#score-table {
+    color: var(--table-color);
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color-2);
+    padding: 24px;
+    border-radius: 10px;
+    border-spacing: 0px;
+    table-layout: fixed;
+}
+
+#score-table input {
+    color: var(--color);
+    border: solid 0px #111;
+    background-color: var(--background-color-2);
+}
+
+button,
+#score-table input:focus {
+    outline-width: 0;
+}
+
+#info-box {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 200px;
+    padding: 14px;
+    border-spacing: 0px;
+    border-radius: 10px;
+    background-color: var(--background-color-2);
+}
+
+#info-box td {
+    font-size: 24px;
+    color: var(--table-color);
+    padding: 10px;
+    border: 0px solid var(--background-color-2);
+}
