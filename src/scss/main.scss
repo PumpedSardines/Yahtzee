@@ -1,0 +1,119 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.view {
+	&.select-user {
+		color: #fff;
+		background-color: #333;
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+
+		.button-list {
+			width: 300px;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+
+			.title {
+				margin-bottom: 16px;
+			}
+
+			.enter-name {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 300px;
+	
+				input {
+					padding: 8px;
+					border-radius: 8px;
+					border: 0px solid black;
+					display: block;
+					width: 300px - 50px - 4px;
+				}
+	
+				button {
+					padding: 8px;
+					display: flex;
+					margin-left: 4px;
+					justify-content: center;
+					align-items: center;
+					border-radius: 8px;
+					color: black;
+					background-color: rgb(150, 255, 167);
+					border: 0px solid black;
+					width: 50px;
+					transition: .2s;
+					cursor: pointer;
+					&:hover {
+						background-color: rgb(173, 255, 187);
+					}
+				}
+			}
+	
+			.player-list {
+				padding: 16px 0px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+
+				h2 {
+					transition: .2s;
+					cursor: pointer;
+					color: #fff;
+					&:hover {
+						color: rgb(242, 117, 117);
+						letter-spacing: 2px;
+					}
+				}
+			}
+	
+			.start {
+				padding: 8px;
+				border-radius: 8px;
+				border: 0px solid black;
+				width: 100%;
+				cursor: pointer;
+			}
+		}
+		
+	}
+
+	&.dices {
+		color: #fff;
+		background-color: #333;
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+
+		.dice {
+			width: 150px;
+			height: 150px;
+			border-radius: 16px;
+			background-color: rgb(125, 216, 125);
+			transition: .2s;
+			&:hover {
+				background-color: rgb(175, 238, 175);
+			}
+		}
+	}
+}
